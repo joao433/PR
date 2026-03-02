@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-bg-main: #0A0A0A;
+  --color-card-bg: #141414;
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #A1A1A1;
+  --color-whatsapp: #FFFFFF;
+  --color-whatsapp-hover: #F0F0F0;
+  --font-serif: "Playfair Display", serif;
+}
+
+body {
+  background-color: var(--color-bg-main);
+  color: var(--color-text-primary);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.glass-effect {
+  background: rgba(20, 20, 20, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+@layer base {
+  * {
+    @apply border-white/5;
+  }
+}
